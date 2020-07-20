@@ -1,0 +1,195 @@
+QMainWindow {
+    background-color: #F2F3F4;
+}
+
+QTabWidget {
+    background-color: #F2F3F4;
+    border-color: transparent;
+}
+
+QWidget#section_main {
+    background-color: #F2F3F4;
+}
+
+QWidget#section_header {
+    background-color: #F2F3F4;
+}
+
+QLabel#section_header_label {
+    font: bold 26px;
+    background-color: transparent;
+    color: #11111;
+    margin-left: 20px;
+}
+
+QWidget#section_content {
+    background-color: #EEEEEE;
+}
+
+QWidget#section_item {
+    background-color: white;
+}
+
+QWidget#section_item:hover {
+    background-color: #FCA828;
+}
+
+QPushButton {
+    background-color: transparent;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: transparent;
+    font: bold 14px;
+    color: #6F7070;
+    min-width: 10em;
+    padding: 15px;
+    text-align:left;
+}
+
+QPushButton:pressed {
+    background-color: #AED8F2;
+    border-style: inset;
+}
+
+QPushButton:hover:!pressed {
+    background-color: #E2E2E3;
+}
+
+QPushButton#section_header {
+    background-color: #E68530;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 5px;
+    border-color: white;
+    font: bold 14px;
+    color: white;
+    min-width: 2em;
+    max-width: 3.5em;
+    padding: 8px;
+    text-align:center;
+}
+
+QPushButton#section_header:pressed {
+    background-color: #B36725;
+}
+
+QPushButton#section_header:hover:!pressed {
+    background-color: #FCA828;
+}
+
+QPushButton#project {
+    background-color: white;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: transparent;
+    font: bold 14px;
+    color: #6F7070;
+    min-width: 12.5em;
+    padding: 15px;
+    text-align:left;
+}
+
+QPushButton#project:pressed {
+    background-color: #56555C;
+    color: white;
+}
+
+QPushButton#project:hover:!pressed {
+    background-color: #FCA828;
+    color: white;
+}
+
+bHubProjectWidget {
+    background-color: white;
+}
+
+bHubProjectButton {
+    background-color: white;
+}
+
+
+QPushButton#sidebar {
+    background-color: transparent;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: transparent;
+    font: bold 14px;
+    color: #6F7070;
+    min-width: 10em;
+    padding: 15px;
+    text-align:left;
+}
+
+QPushButton#sidebar:pressed {
+    background-color: #AED8F2;
+    border-style: inset;
+}
+
+QPushButton#sidebar:hover:!pressed {
+    background-color: #E2E2E3;
+}
+
+
+QPushButton#sidebar_active {
+    background-color: #AED8F2;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: transparent;
+    font: bold 14px;
+    color: #6F7070;
+    min-width: 10em;
+    padding: 15px;
+    text-align:left;
+}
+
+QPushButton#sidebar_active:pressed {
+    background-color: #AED8F2;
+    border-style: inset;
+}
+
+QPushButton#sidebar_active:hover:!pressed {
+    background-color: #A0C7DF;
+}
+
+bHubProjectWidget {
+    background-color: white;
+    border-radius: 10px;
+    border-color: transparent;
+}
+
+QLabel#project {
+    font: bold 14px;
+    color: #6F7070;
+    text-align:left;
+}
+
+QScrollArea {
+    border: none;
+}
+
+QScrollBar:vertical {
+    background-color:white;
+    width:10px;
+    margin: 0px 0px 0px 0px;
+    border: 0px solid #999999;
+}
+QScrollBar::handle:vertical {
+    background-color: #383838;
+    min-height: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+QScrollBar::add-line:vertical {
+    height: 0px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+}
+QScrollBar::sub-line:vertical {
+    height: 0px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+}
