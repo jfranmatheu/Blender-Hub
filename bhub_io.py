@@ -50,7 +50,8 @@ def get_datadir() -> pathlib.Path:
 
 
 datadir = get_datadir()
-bhub_dir = str(datadir / "BlenderHub")
+bhub_path = datadir / "BlenderHub"
+bhub_dir = str(bhub_path)
 bf_dir = datadir / "Blender Foundation"
 blender_dir = join(bhub_dir, 'Blender')  # join(dirname(__file__), 'blender')
 bf_blender_dir = join(str(bf_dir), 'Blender')

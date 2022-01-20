@@ -1,11 +1,9 @@
-from typing import Union
 
 from PyQt5.QtCore import QSize, QRect, Qt, QPoint, QObject
 from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import QTabWidget, QWidget
-from PyQt5.uic.properties import QtCore
 
 from bhub_button import bHubProjectButton
 from bhub_project_widget import bHubProjectWidget
@@ -26,6 +24,7 @@ class Section(Enum):
 
     def __call__(self):
         return self.value
+
 
 class bHubWindow(QMainWindow):
     left_widget: QWidget
@@ -301,7 +300,9 @@ class bHubWindow(QMainWindow):
 
     def draw_projects_list(self):  # , content_widget, content_layout):
         print("Draw projects list")
-        from bhub_io import projects_list
+        from bhub_io import projects_list, exists
+        if not exists(projects_list):
+            return
         import json
         idx = 0
         with open(projects_list, 'r') as file:
